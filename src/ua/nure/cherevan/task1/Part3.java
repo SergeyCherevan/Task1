@@ -15,12 +15,14 @@ public class Part3 {
     }
 
     public static int Gcd(int a, int b) {
-        while (a % b != 0) {
+        while (true) {
+            int r = a % b;
+
+            if (r == 0) return b;
+
             int t = b;
-            b = a % b;
+            b = r;
             a = t;
         }
-
-        return b;
     }
 }
