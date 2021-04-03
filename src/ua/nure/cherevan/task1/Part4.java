@@ -20,7 +20,7 @@ public class Part4 {
             if ('0' <= c && c <= '9') {
                 sum += c - '0';
 
-                numStrList.add("" + c);
+                numStrList.add(String.valueOf(c));
             }
         }
 

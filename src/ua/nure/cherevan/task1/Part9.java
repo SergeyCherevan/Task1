@@ -16,7 +16,7 @@ public class Part9 {
 
         for (int i = 0; i < primeNumbers.length; i++)
         {
-            strArr[i] = primeNumbers[i] + "";
+            strArr[i] = String.valueOf(primeNumbers[i]);
         }
 
         System.out.println(String.join(" ", strArr));
@@ -38,7 +38,7 @@ public class Part9 {
             }
         }
 
-        List<Integer> primeNumbers = new ArrayList<Integer>(n/2 + 1);
+        List<Integer> primeNumbers = new ArrayList<>(n/2 + 1);
 
         for (int i = 1; i <= n; i++){
             if(isNumbersPrime[i - 1] == true) {

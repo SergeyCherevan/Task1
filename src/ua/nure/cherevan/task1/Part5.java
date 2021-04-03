@@ -10,13 +10,14 @@ public class Part5 {
         int n = Integer.parseInt(args[0]);
         int[] primeNumbers = getPrimeNumbers(n);
 
-        String outStr = "";
-        for (int i = 0; i < primeNumbers.length; i++) {
-            outStr += primeNumbers[i];
+        StringBuffer outStr = new StringBuffer("");
+        for (int i = 0; i < primeNumbers.length; i++)
+        {
+            outStr.append(primeNumbers[i]);
 
             if (i == primeNumbers.length - 1) break;
 
-            outStr += " ";
+            outStr.append(" ");
         }
 
         System.out.println(outStr);

@@ -4,14 +4,14 @@ public class Part2 {
 
     public static void main(String[] args) {
 
-        String outStr = "";
+        StringBuffer outStr = new StringBuffer("");
 
         for (int i = args.length - 1; ; i--) {
-            outStr += args[i];
+            outStr.append(args[i]);
 
             if (i == 0) break;
 
-            outStr += " ";
+            outStr.append(" ");
         }
 
         System.out.println(outStr);

@@ -17,7 +17,7 @@ public class Part6 {
 
         List<String> strList = new ArrayList<>(divisors.length);
         for (int e : divisors) {
-            strList.add(e + "");
+            strList.add(String.valueOf(e));
         }
 
         System.out.println("prime divisors: " + String.join(" * ", strList) + "\n");

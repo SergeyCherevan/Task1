@@ -40,7 +40,7 @@ public class Part8 {
 
             for (; j < arr[i].length; ++j)
             {
-                strArr[j] = arr[i][j] + "";
+                strArr[j] = String.valueOf(arr[i][j]);
             }
 
             for (; j < arr.length; ++j)
